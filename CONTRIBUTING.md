@@ -11,6 +11,7 @@ Thanks for checking out QuickPlates! We welcome all contributions — from fixin
      ```
      git clone https://github.com/student-manokamna/QuickPlates.git
      ```
+     
    - Make sure the URL matches exactly with capital letters (`QuickPlates`), as GitHub URLs are case-sensitive.
 
 2. **Create a New Branch**
