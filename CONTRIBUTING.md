@@ -81,3 +81,4 @@ Thank you for contributing! Your help makes QuickPlates better for everyone. ðŸ’
 
 **Important Note:**  
 The repo name is **`QuickPlates`** (capital Q and P), so when cloning, use:  
+
