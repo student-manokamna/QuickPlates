@@ -7,6 +7,8 @@
 ![Redux](https://img.shields.io/badge/Redux-State--Manager-purple?style=flat-square)
 ![Tailwind](https://img.shields.io/badge/TailwindCSS-Styling-teal?style=flat-square)
 ![API](https://img.shields.io/badge/Swiggy-API-orange?style=flat-square)
+![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
+![Open Source](https://img.shields.io/badge/Open--Source-Contributions%20Welcome-brightgreen?style=flat-square)
 
 ---
 
