@@ -17,18 +17,14 @@ const RestaurentCard=(props)=>{
     // console.log(props);
     
     return (
-        <div data-testid="resCard" className="m-4 p-4 w-[250px] h-[450px]  rounded-lg bg-slate-400 hover:bg-gray-100 hover:border-2" 
-       >
+    <div data-testid="resCard" className="m-2 sm:m-4 p-2 sm:p-4 w-full sm:w-[250px] h-[350px] sm:h-[450px] rounded-lg bg-slate-400 hover:bg-gray-100 hover:border-2 flex flex-col items-center break-words overflow-hidden" >
          {/* style={styleCard} */}
-            <img className="rounded-lg h-[250px]" alt="res-logo"         
-             src={CDN_URL+
-                resdata.info.cloudinaryImageId}
-             />
-            <h3 className="font-bold py-4 text-lg">{name}</h3>
-            <h4>{resdata.info.cuisines.join(',')}</h4>
-            <h4>{resdata.info.avgRating}</h4>
+            <img className="rounded-lg h-[150px] sm:h-[250px] w-full object-cover" alt="res-logo" src={CDN_URL+resdata.info.cloudinaryImageId} />
+            <h3 className="font-bold py-4 text-lg w-full text-center break-words">{name}</h3>
+            <h4 className="w-full text-center break-words whitespace-pre-line">{resdata.info.cuisines.join(', ')}</h4>
+            <h4 className="w-full text-center">{resdata.info.avgRating}</h4>
             {/* <h4>{avgRatingString}</h4> */}
-            <h4>{resdata.info.sla.deliveryTime}-min</h4>
+            <h4 className="w-full text-center">{resdata.info.sla.deliveryTime}-min</h4>
         </div>
 
     );

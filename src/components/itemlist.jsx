@@ -10,20 +10,16 @@ const ItemList=({items,dummy})=>{
     }
 return  <div>
     {items.map((item)=>(
- 
-        <div data-testId="foodItems" key={item.card.info.id} className="p-2 m-2 border-gray-200 border-b-2 text-left flex justify-between">
-                    <div className="w-9/12">
-            <div className="py-2"> <span>{item.card.info.name}</span> <span>- ₹ {item.card.info.price?item.card.info.price/100:item.card.info.defaultPrice/100}
+        <div data-testId="foodItems" key={item.card.info.id} className="p-2 m-2 border-gray-200 border-b-2 text-left flex flex-col sm:flex-row justify-between items-center">
+            <div className="w-full sm:w-9/12">
+                <div className="py-2"> <span>{item.card.info.name}</span> <span>- ₹ {item.card.info.price?item.card.info.price/100:item.card.info.defaultPrice/100}
                 </span></div>
-            <p className="text-xs">{item.card.info.description}</p>
+                <p className="text-xs">{item.card.info.description}</p>
             </div>
-            <div  className="w-3/12 p-4">
-                   
-                    <div className="absolute">
-                    <button className="p-2 bg-black text-white  shadow-lg rounded-lg mx-16" onClick={()=>handleAddItem(item)}> ADD +</button>
-                    </div>
-                    <img src={CDN_URL +item.card.info.imageId}></img>
-                    </div>
+            <div className="w-full sm:w-3/12 p-2 sm:p-4 flex flex-col items-center">
+                <button className="p-2 bg-black text-white shadow-lg rounded-lg my-2 sm:mx-16" onClick={()=>handleAddItem(item)}> ADD +</button>
+                <img className="max-w-full h-auto rounded-lg" src={CDN_URL +item.card.info.imageId} alt={item.card.info.name} />
+            </div>
         </div>
     ))}
 </div>

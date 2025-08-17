@@ -17,12 +17,12 @@ const Header=()=>{
    const cartItems=useSelector((store)=>store.cart.items);
 
     return (
-        <div className="flex justify-between bg-pink-100 shadow-lg sm:bg-yellow-50 lg:bg-pink-100  mb-2">
-            <div className="logo-container">
-                <img className="w-56" src={LOGO_URL}/>
-            </div>
-            <div className="flex items-center">
-                <ul className="flex p-4 m-4">
+            <div className="flex flex-col sm:flex-row justify-between items-center bg-pink-100 shadow-lg sm:bg-yellow-50 lg:bg-pink-100 mb-2 p-2 sm:p-4">
+                <div className="logo-container mb-2 sm:mb-0">
+                    <img className="w-32 sm:w-56 max-w-full h-auto" src={LOGO_URL} alt="Logo" />
+                </div>
+                <div className="flex items-center w-full sm:w-auto">
+                    <ul className="flex flex-col sm:flex-row p-2 sm:p-4 m-2 sm:m-4 items-center w-full sm:w-auto">
                     <li className="px-4">
                         online staus:{onlineStatus?"🟢":"🔴"}
                     </li>

@@ -38,8 +38,8 @@ const Body = () => {
   return listofRestaurents.length === 0 ? (
     <Shimmer />
   ) : (
-    <div className="body max-w-7xl mx-auto px-4">
-      <div className="filter flex flex-wrap items-center bg-gray-100 p-4 rounded-lg mb-6 shadow-sm">
+    <div className="body max-w-7xl mx-auto px-2 sm:px-4">
+      <div className="filter flex flex-col sm:flex-row flex-wrap items-center bg-gray-100 p-2 sm:p-4 rounded-lg mb-6 shadow-sm w-full">
         <div className="search m-2 p-2">
           <input
             type="text"
@@ -86,7 +86,7 @@ const Body = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-2">
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4">
         {filteredrestaurent.map((reataurent) => (
           <Link
             key={reataurent.info.id}
